@@ -65,10 +65,50 @@
   <!-- CARROUSEL + INFO -------------------------------------------------------------------------- -->
   <section class="container-fluid text-white">
     <div class="row bg-dark">
+      <!-- carrouser -->
+      <div class="col-lg-7 p-0">
+        <div id="carouselCidades" class="carousel slide" data-ride="carousel">
+          <!-- indicadores de slide -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselCidades" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCidades" data-slide-to="1" class=""></li>
+            <li data-target="#carouselCidades" data-slide-to="2" class=""></li>
 
-      <div class="col-7">
+          </ol>
+          <!-- conteudo do carrousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/california.jpg" alt="First slide">
+              <div class="carousel-caption">
+                <p class="display-4">California</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/paris.jpg" alt="First slide">
+              <div class="carousel-caption">
+                <p class="display-4">Paris</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/dublin.jpg" alt="First slide">
+              <div class="carousel-caption">
+                <p class="display-4">Dublin</p>
+              </div>
+            </div>
+          </div>
+          <!-- controles -->
+          <a class="carousel-control-prev" href="#carouselCidades" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCidades" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
 
       </div>
+      <!-- carrouser -->
 
       <div class="col-lg-5 py-4">
         <h1 class="display-4">Realize a viagem do seu sonho</h1>
