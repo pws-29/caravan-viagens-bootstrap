@@ -13,6 +13,39 @@
 </head>
 
 <body>
+
+
+  <!-- MODAL -------------------------------------------------------------------------- -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">E-mail</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -------------------------------------------------------------------------- -->
+
+
   <!-- HEADER -------------------------------------------------------------------------- -->
   <!--Navbar irá se expandir no tamanho medium.-->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
@@ -51,7 +84,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="login.html" class="nav-link">Login</a>
+          <a href="login.html" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
         </li>
 
         <li class="nav-item ml-md-3">
