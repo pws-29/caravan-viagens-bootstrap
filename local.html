@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan - Local</title>
+
+  <script src="https://kit.fontawesome.com/1344616a45.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- MODAL -------------------------------------------------------------------------- -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">E-mail</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -------------------------------------------------------------------------- -->
+
+
+  <!-- HEADER -------------------------------------------------------------------------- -->
+  <!--Navbar irá se expandir no tamanho medium.-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="./assets/caravan.svg" alt="Caravan">
+    </a>
+    <!--
+      Botão referencia a ação para o ID do data-target;
+      Esconder botão e mostrar o que está na DIV.
+    -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ">
+          <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Locais
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local.html">Califórnia</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="planos.html" class="nav-link">Planos</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contato.html" class="nav-link">Contato</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="login.html" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+
+        <li class="nav-item ml-md-3">
+          <a href="inscricao.html" class="btn btn-outline-primary">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- HEADER -------------------------------------------------------------------------- -->
+
+  <!-- DESCUBRA DUBLIN -------------------------------------------------------------------------- -->
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+      <h1 class="display-4 text-primary">Descubra Dublin</h1>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./assets/local/foto-1.jpg" alt="Foto 1">
+        <img class="img-fluid mb-4" src="./assets/local/foto-2.jpg" alt="Foto 2">
+        <img class="img-fluid mb-4" src="./assets/local/foto-3.jpg" alt="Foto 3">
+      </div>
+
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./assets/local/foto-4.jpg" alt="Foto 4">
+        <img class="img-fluid mb-4 flex-grow-1" src="./assets/local/foto-5.jpg" alt="Foto 5">
+      </div>
+
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./assets/local/foto-6.jpg" alt="Foto 6">
+        <img class="img-fluid mb-4" src="./assets/local/foto-7.jpg" alt="Foto 7">
+      </div>
+    </div>
+  </section>
+  <!-- DESCUBR DUBLIN -------------------------------------------------------------------------- -->
+
+  <!-- Footer -------------------------------------------------------------------------- -->
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4 m-0 mw-100">
+      <div class="row d-flex justify-content-around">
+        <div class="d-flex flex-column text-center">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled m-0">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column text-center">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled m-0">
+            <li><a href="local.html">Califórnia</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column text-center">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled m-0 text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>+5521 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column text-center">
+          <h4 class="h6">SEGUE A GENTE!</h4>
+          <ul class="list-unstyled m-0 text-secondary">
+            <i style="font-size: 2.5rem; color: deeppink; cursor: pointer;" class="fab fa-instagram"></i>
+            <i style="font-size: 2.5rem; color: #1DA1F2; padding-left: 8px; cursor: pointer;"
+              class="fab fa-twitter"></i>
+            <i style="font-size: 2.5rem; color: #FF0000; padding-left: 8px; cursor: pointer;"
+              class="fab fa-youtube"></i>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer -------------------------------------------------------------------------- -->
+
+  <!--Depende do Jquery e Popper.js-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+</body>
+
+</html>
