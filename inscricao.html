@@ -79,7 +79,7 @@
           <a href="planos.html" class="nav-link">Planos</a>
         </li>
 
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="contato.html" class="nav-link">Contato</a>
         </li>
 
@@ -88,7 +88,7 @@
         </li>
 
         <li class="nav-item ml-md-3">
-          <a href="inscricao.html" class="btn btn-outline-primary">Inscreva-se</a>
+          <a href="inscricao.html" class="btn btn-outline-primary active">Inscreva-se</a>
         </li>
       </ul>
     </div>
@@ -97,151 +97,86 @@
 
   <!-- HEADER -------------------------------------------------------------------------- -->
 
+  <!-- Inscreva-se -------------------------------------------------------------------------- -->
+
   <section class="container">
     <div class="my-5 text-center">
-      <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
-      <h1 class="display-4 text-primary">Fale Conosco</h1>
+      <span class="h6 d-block">PROGRAME A VIAGEM DOS SEUS SONHOS</span>
+      <h1 class="display-4 text-primary">INSCREVA-SE</h1>
     </div>
     <div class="row">
-      <div class="col-lg mb-5">
-        <form class="bg-light rounded p-4 box-shadow" action="">
-          <div class="form-group">
-            <label for="clienteNome">Nome</label>
-            <input type="text" class="form-control" id="clienteNome">
+      <form class="col-lg-6" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNome">Nome</label>
+            <input type="text" id="inputNome" class="form-control" placeholder="Nome Completo">
           </div>
-          <div class="form-group">
-            <label for="clienteEmail">Email</label>
-            <input type="email" class="form-control" id="clienteEmail">
+          <div class="form-group col-md-6">
+            <label for="inputCpf">CPF</label>
+            <input type="text" id="inputCpf" class="form-control" placeholder="xxx.xxx.xxx-xx">
           </div>
-          <div class="form-group">
-            <label for="clienteMensagem">Mensagem</label>
-            <textarea class="form-control" id="clienteMensagem" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-        </form>
-      </div>
 
-      <div class="col-lg">
-        <h2 class="h6">NOSSO ENDEREÇO</h2>
-        <a href=""><img src="./assets/mapa.png" class="img-fluid box-shadow rounded mb-4" alt="Endereço empresa"></a>
-        <div class="d-flex flex-column mb-4">
-          <h2 class="h6">DADOS DE CONTATO</h2>
-          <ul class="list-unstyled m-0 text-secondary">
-            <li>caravan@caravan.com.br</li>
-            <li>+5521 99999-9999</li>
-            <li>De Seg. à Sex. das 8h às 18h</li>
-          </ul>
-        </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">E-mail</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Seu email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSenha">Senha</label>
+            <input type="password" id="inputSenha" class="form-control" placeholder="Senha de acesso">
+          </div>
 
-        <div class="d-flex flex-column">
-          <h4 class="h6">SEGUE A GENTE!</h4>
-          <ul class="list-unstyled m-0 text-secondary">
-            <i style="font-size: 2.5rem; color: deeppink; cursor: pointer;" class="fab fa-instagram"></i>
-            <i style="font-size: 2.5rem; color: #1DA1F2; padding-left: 8px; cursor: pointer;"
-              class="fab fa-twitter"></i>
-            <i style="font-size: 2.5rem; color: #FF0000; padding-left: 8px; cursor: pointer;"
-              class="fab fa-youtube"></i>
-          </ul>
+          <div class="form-group col-12">
+            <label for="inputEndereço">Endereço</label>
+            <input type="text" id="inputEndereço" class="form-control" placeholder="Nome da Rua, bairro e número">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" id="inputCidade" class="form-control">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputEstado">Estado</label>
+            <select class="form-control" id="inputEstado">
+              <option value="">Selecione o Estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCEP">CEP</label>
+            <input type="text" id="inputCEP" class="form-control" placeholder="xxx.xx-xxx">
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </section>
 
-  <!-- HEADER -------------------------------------------------------------------------- -->
-
-  <!-- Perguntas Frequentes -------------------------------------------------------------------------- -->
-
-  <section class="container">
-    <div class="my-5 text-center">
-      <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
-      <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-6" id="perguntasFrequentes" data-children=".pergunta">
-        <div class="pergunta py-2">
-          <a href="#pergunta1" class="lead" data-toggle="collapse" aria-expanded="true" aria-controls="pergunta1">
-            → É possível cancelar a
-            viagem?
-          </a>
-          <div class="collapse" role="tabpanel" id="pergunta1" data-parent="#perguntasFrequentes">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, laborum consequuntur laudantium quos
-              incidunt iste accusamus deleniti voluptatibus minima doloribus, dolorem cumque dicta tempore at illo
-              neque.
-            </p>
-          </div>
-
-          <div class="dropdown-divider"></div>
-
-          <div class="pergunta py-2">
-            <a href="#pergunta2" class="lead" data-toggle="collapse" aria-expanded="true" aria-controls="pergunta2">
-              → Qual a garantia que tenho se perder o voo?
-            </a>
-            <div class="collapse" role="tabpanel" id="pergunta2" data-parent="#perguntasFrequentes">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem quod recusandae
-                harum tenetur sit asperiores delectus culpa saepe dolor? Quis natus inventore, temporibus culpa expedita
-                molestias.
-              </p>
-            </div>
-          </div>
-
-          <div class="dropdown-divider"></div>
-
-          <div class="pergunta py-2">
-            <a href="#pergunta3" class="lead" data-toggle="collapse" aria-expanded="true" aria-controls="pergunta3">
-              → Como posso efetuar o pagamento?
-            </a>
-            <div class="collapse" role="tabpanel" id="pergunta3" data-parent="#perguntasFrequentes">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem dolor tempora adipisci
-                voluptates ab ipsum! Ex perspiciatis pariatur dolor quo numquam porro repudiandae consequuntur nobis
-                ipsam?
-              </p>
-            </div>
-          </div>
-
-          <div class="dropdown-divider"></div>
-
-          <div class="pergunta py-2">
-            <a href="#pergunta4" class="lead" data-toggle="collapse" aria-expanded="true" aria-controls="pergunta4">
-              → Qual o melhor destino?
-            </a>
-            <div class="collapse" role="tabpanel" id="pergunta4" data-parent="#perguntasFrequentes">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem quod recusandae
-                harum tenetur sit asperiores delectus culpa saepe dolor? Quis natus inventore, temporibus culpa expedita
-                molestias.
-              </p>
-            </div>
-          </div>
-
-          <div class="dropdown-divider"></div>
-
-          <div class="pergunta py-2">
-            <a href="#pergunta5" class="lead" data-toggle="collapse" aria-expanded="true" aria-controls="pergunta5">
-              → Existem pacotes para grupos grandes?
-            </a>
-            <div class="collapse" role="tabpanel" id="pergunta5" data-parent="#perguntasFrequentes">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt expedita quod suscipit quis minus
-                excepturi deserunt vero? Amet minus atque possimus doloribus quam quas inventore excepturi! Nisi.ß
-              </p>
-            </div>
-          </div>
-          <div class="dropdown-divider"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center my-4">
-      <p class="small m-2">NÃO FOI RESPONDIDO?</p>
-      <a href="contato.html" class="btn-lg btn-primary ">Fale Conosco</a>
-    </div>
-  </section>
-
-  <!-- Perguntas Frequentes -------------------------------------------------------------------------- -->
+  <!-- Inscreva-se  -------------------------------------------------------------------------- -->
 
   <!-- Footer -------------------------------------------------------------------------- -->
 
