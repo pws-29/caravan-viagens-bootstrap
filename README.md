@@ -26,7 +26,6 @@ O site utiliza os principais componentes disponíveis pela ferramenta, construin
 Todo o projeto é responsivo para aparelhos móveis e tablets, responsividade feita através do Bootstrap.
 
 
-
 ## 🤝 Colaboradores
 
 <table>
